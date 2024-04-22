@@ -1,8 +1,8 @@
- class Matrix {
+class Matrix {
   List<double> rowOne = [];
   List<double> rowTwo = [];
   List<double> rowThree = [];
-  
+
   void sortMatrixFirstTime(){
     if (rowOne[0].abs() > rowTwo[0].abs()) {
       if (rowOne[0].abs() > rowThree[0].abs()) {
@@ -36,7 +36,7 @@
       }
     }
   }
-  
+
   void sortMatrixSecondTime (){
     if(rowTwo[1].abs()<rowThree[1].abs()){
       for (int i = 0; i < rowTwo.length; i++) {

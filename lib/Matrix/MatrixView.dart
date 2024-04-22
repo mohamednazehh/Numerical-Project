@@ -54,27 +54,27 @@ class _MatrixScreenState extends State<MatrixScreen> implements MatrixNavigator{
           backgroundColor: Colors.transparent,
           body: Consumer<MatriXViewModel>(
             builder: (context, value, child) => Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  CarouselSlider(
-                    items: methods,
-                    options: CarouselOptions(
-                      height: 550,
-                      viewportFraction: 0.4,
-                      initialPage: 0,
-                      enableInfiniteScroll: true,
-                      reverse: false,
-                      autoPlay: false,
-                      enlargeCenterPage: true,
-                      enlargeFactor: 0.4,
-                      scrollDirection: Axis.horizontal,
-                    ),
-                  )
-                ],
-              ),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CarouselSlider(
+                  items: methods,
+                  options: CarouselOptions(
+                    height: 550,
+                    viewportFraction: 0.4,
+                    initialPage: 0,
+                    enableInfiniteScroll: true,
+                    reverse: false,
+                    autoPlay: false,
+                    enlargeCenterPage: true,
+                    enlargeFactor: 0.4,
+                    scrollDirection: Axis.horizontal,
+                  ),
+                )
+              ],
             ),
           ),
         ),
+      ),
     );
   }
 
@@ -84,4 +84,5 @@ class _MatrixScreenState extends State<MatrixScreen> implements MatrixNavigator{
   }
 
 }
+
 

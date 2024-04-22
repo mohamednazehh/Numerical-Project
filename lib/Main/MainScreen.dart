@@ -28,7 +28,7 @@ class MainScreen extends StatelessWidget {
               child: Center(
                 child: Image.asset('assets/images/$method' , height: double.infinity,),))).toList(),
               options: CarouselOptions(
-                height: 250,
+                height: 500,
                 viewportFraction: 0.4,
                 initialPage: 0,
                 enableInfiniteScroll: true,
